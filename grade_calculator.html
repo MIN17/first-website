@@ -4,66 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful Tools For Undergrads</title>
+    <title>Grade Calculator</title>
     <style>
-        div.list {
-            text-align:center;
-        }
-        a {
-            text-decoration: none;
-            width: 100px;
+        body {
+            margin:0;
         }
         h1 {
-            font-size: 40px;
-            text-align: center;
+            font-size:40px;
+            text-align:center;
+            padding:20px;
+            border-bottom:2px solid gray;
+            margin:0;
+        }
+        #list {
+            border-right:2px solid gray;
+            margin-bottom:10px;
+        }
+        #list li {
+            margin-bottom:10px;
+        }
+        a {
+            text-decoration:none;
+            width:100px;
+            padding-bottom:15px;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns:200px 1fr;
+        }
+        #curr {
+            text-decoration:underline;
+        }
+        #content {
+            margin-left:25px;
+            max-width:1000px;
+        }
+        #disqus_thread {
+            margin-top:30px;
+            margin-left:25px;
         }
     </style>
 </head>
 <body>
-    <div>Work In Progress...</div>
-    <h1><a href="homepage.html" style="color:red">Useful Tools For Undergrads</a></h1>
-    <div class="list">
-        <ol>
-            <li><a href="grade_calculator.html" style="color:blue; text-decoration:underline">Grade Calculator</a></li>
-            <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
-            <li><a href="professor_rating.html" style="color:blue">Professor's Rating</a></li>
-        </ol>
+    <h1><a href="homepage.html" style="color:red">Useful Tools For UMD CS Undergrads</a></h1>
+    <div id="grid">
+        <div id="list">
+            <ol>
+                <li><a href="grade_calculator.html" style="color:blue;" id="curr">Grade Calculator</a></li>
+                <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
+                <li><a href="professor_rating.html" style="color:blue">Professor's Rating</a></li>
+            </ol>
+        </div>
+        <div id="content">
+            <h2>Grade Calculator</h2>
+            <p> You can type in your <strong>grades</strong> and <strong>weights</strong>
+                for each of the assignments and the calculator will tell you what your final
+                grade and percentage will be. It will also tell you what you need to get
+                on the final exam to get a certain grade.
+            </p>
+            <img 
+                src="https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                width="600px"
+            >
+        
+            <p style="margin-top:30px;">As an undergrad, especially towards the end of
+                semester, you may start worrying about what you need on your final to get
+                a certain grade. This tool will help you figure that out. If you know what
+                the specific cutoffs for each of the grade letters are, you can type them.
+                If not, it will use the following default cutoffs used at 
+                <a href="https://www.umd.edu/" target="_blank" style="color:blue; text-decoration:underline">UMD</a>: <br>
+                <ul>
+                    <li>A+: 97%+</li>
+                    <li>A: 93-96%</li>
+                    <li>A-: 90-92%</li>
+                    <br>
+                    <li>B+: 87-89%</li>
+                    <li>B: 83-86%</li>
+                    <li>B-: 80-82%</li>
+                    <br>
+                    <li>C+: 77-79%</li>
+                    <li>C: 73-76%</li>
+                    <li>C-: 70-72%</li>
+                    <br>
+                    <li>D+: 67-69%</li>
+                    <li>D: 63-66%</li>
+                    <li>D-: 60-62%</li>
+                    <li>F: 59%-</li>
+                </ul>
+            </p>
+        </div>
     </div>
-    <h2>Grade Calculator</h2>
-    <p> You can type in your <strong>grades</strong> and <strong>weights</strong>
-        for each of the assignments and the calculator will tell you what your final
-        grade and percentage will be. It will also tell you what you need to get
-        on the final exam to get a certain grade.
-    </p>
-    <img 
-        src="https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-        width="600px"
-    >
-
-    <p style="margin-top:30px;">As an undergrad, especially towards the end of
-        semester, you may start worrying about what you need on your final to get
-        a certain grade. This tool will help you figure that out. If you know what
-        the specific cutoffs for each of the grade letters are, you can type them.
-        If not, it will use the following default cutoffs: <br>
-        <ul>
-            <li>A+: 97%+</li>
-            <li>A: 93-96%</li>
-            <li>A-: 90-92%</li>
-            <br>
-            <li>B+: 87-89%</li>
-            <li>B: 83-86%</li>
-            <li>B-: 80-82%</li>
-            <br>
-            <li>C+: 77-79%</li>
-            <li>C: 73-76%</li>
-            <li>C-: 70-72%</li>
-            <br>
-            <li>D+: 67-69%</li>
-            <li>D: 63-66%</li>
-            <li>D-: 60-62%</li>
-            <li>F: 59%-</li>
-        </ul>
-    </p>
     <div id="disqus_thread"></div>
     <script>
         /**

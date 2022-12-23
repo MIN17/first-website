@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful Tools For Undergrads</title>
+    <title>Professor's Rating</title>
     <style>
-        div.list {
-            text-align:center;
-        }
-        a {
-            text-decoration: none;
+        body {
+            margin:0;
         }
         h1 {
-            font-size: 40px;
-            text-align: center;
+            font-size:40px;
+            text-align:center;
+            padding:20px;
+            margin:0;
+            border-bottom:2px solid gray;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns:200px 1fr;
+        }
+        #list {
+            border-right:2px solid gray;
+        }
+        #list li {
+            margin-bottom:10px;
+        }
+        #content {
+            margin-left:25px;
+            max-width:1000px;
+        }
+        a {
+            text-decoration:none;
+        }
+        #curr {
+            text-decoration:underline;
+        }
+        #disqus_thread {
+            margin-top:30px;
+            margin-left:25px;
         }
     </style>
 </head>
 <body>
-    <div class="list">Work In Progress...</div>
-    <h1><a href="homepage.html" style="color:red">Useful Tools For Undergrads</a></h1>
-    <div>
-        <ol>
-            <li><a href="grade_calculator.html" style="color:blue">Grade Calculator</a></li>
-            <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
-            <li><a href="professor_rating.html" style="color:blue; text-decoration:underline">Professor's Rating</a></li>
-        </ol>
+    <h1><a href="homepage.html" style="color:red">Useful Tools For UMD CS Undergrads</a></h1>
+    <div id="grid">
+        <div id="list">
+            <ol>
+                <li><a href="grade_calculator.html" style="color:blue">Grade Calculator</a></li>
+                <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
+                <li><a href="professor_rating.html" style="color:blue;" id="curr">Professor's Rating</a></li>
+            </ol>
+        </div>
+        <div id="content">
+            <h2>Professor's Rating</h2>
+            <p>Enter the professor's name and the course number to see the professor's rating.</p>
+        </div>
     </div>
-    <h2>Professor's Rating</h2>
-    <p>Enter the professor's name and the course number to see the professor's rating.</p>
     <div id="disqus_thread"></div>
     <script>
         /**

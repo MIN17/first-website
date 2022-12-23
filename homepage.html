@@ -4,38 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful Tools For Undergrads</title>
+    <title>Useful Tools For UMD CS Undergrads</title>
     <style>
-        div.list {
-            text-align:center;
+        body {
+            margin:0;
         }
-        a {
-            text-decoration: none;
-        }
+        /*
+        block level element
+        */
         h1 {
-            font-size: 40px;
-            text-align: center;
+            font-size:40px;
+            text-align:center;
+            padding:20px;
+            border-bottom:2px solid gray;
+            margin:0;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns:200px 1fr;
+        }
+        #list {
+            border-right:2px solid gray;
+            margin:0;
+            margin-bottom:0;
+        }
+        #list li {
+            margin-bottom:10px;
+        }
+        #content {
+            margin-left:25px;
+            max-width:1000px;
+        }
+        img {
+            margin-top:20px;
+            width:600px;
+        }
+        /*
+        in-line element
+        */
+        a {
+            text-decoration:none;
+        }
+        #disqus_thread {
+            margin-top:30px;
+            margin-left:25px;
         }
     </style>
 </head>
 <body>
-    <h1><a href="homepage.html" style="color:red">Useful Tools For Undergrads</a></h1>
-    <div class="list" style="margin-bottom:50px">
-        <ol>
-            <li><a href="grade_calculator.html" style="color:blue">Grade Calculator</a></li>
-            <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
-            <li><a href="professor_rating.html" style="color:blue">Professor's Rating</a></li>
-        </ol>
+    <h1><a href="homepage.html" style="color:red">Useful Tools For UMD CS Undergrads</a></h1>
+    <div id="grid">
+        <div id="list">
+            <ol>
+                <li><a href="grade_calculator.html" style="color:blue">Grade Calculator</a></li>
+                <li><a href="schedule_builder.html" style="color:blue">Schedule Builder</a></li>
+                <li><a href="professor_rating.html" style="color:blue">Professor's Rating</a></li>
+            </ol>
+        </div>
+        <div id="content">
+            <img src="https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1679&q=80">
+            <h2>Intro</h2>
+            <p>On this website, you will be able to access three different useful tools that can
+                be used by college undergraduate students. These tools are a grade calculator, a
+                schedule builder, and a professor ratings tool. Each of these tools will require you
+                to type in some information and then it will give you the results. Enjoy the tools!
+            </p>
+        </div>
     </div>
-    <img src="https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1679&q=80"
-        width="600px"
-    >
-    <h2>Intro</h2>
-    <p>On this website, you will be able to access three different useful tools that can
-        be used by college undergraduate students. These tools are a grade calculator, a
-        schedule builder, and a professor ratings tool. Each of these tools will require you
-        to type in some information and then it will give you the results. Enjoy the tools!
-    </p>
     <div id="disqus_thread"></div>
     <script>
         /**
